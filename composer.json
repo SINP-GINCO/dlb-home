@@ -11,7 +11,8 @@
         "symfony/lts": "^3",
         "symfony/maker-bundle": "^1.1",
         "symfony/twig-bundle": "^3.4",
-        "symfony/yaml": "^3.4"
+        "symfony/yaml": "^3.4",
+        "twbs/bootstrap": "~3.0"
     },
     "require-dev": {
         "symfony/dotenv": "^3.4"
