@@ -18,7 +18,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/legal", name="legal")
+     * @Route("/mentions-legales", name="legal")
      */
     public function legal()
     {
