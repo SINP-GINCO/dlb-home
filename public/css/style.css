@@ -7043,6 +7043,18 @@ body {
 .homepage .blocks-container .blocks > div {
   display: table-cell;
 }
+.homepage .blocks-container .well-1 img {
+  margin-top: 0;
+}
+.homepage .blocks-container .well-2 img {
+  margin-top: 10px;
+}
+.homepage .blocks-container .well-3 img {
+  margin-top: -10px;
+}
+.homepage .blocks-container .well-4 img {
+  margin-top: -10px;
+}
 .homepage .homepage-intro {
   margin-top: 30px;
 }
