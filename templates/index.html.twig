@@ -1,20 +1,72 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello {{ controller_name }}!{% endblock %}
+{% block title %}Dépôt Légal des données brutes de Biodiversité - Accueil de la procédure{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<div class="homepage">
+    <div class="row homepage-intro">
+        <div class="col-sm-8">
+            <h1 class="underlined">Dépôt Légal de Biodiversité</h1>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+            <p>Bienvenue sur l&rsquo;espace d&rsquo;accueil des diff&eacute;rents outils mis &agrave; la disposition des ma&icirc;tres d&rsquo;ouvrages concern&eacute;s dans le Code de l&rsquo;environnement par les articles :</p>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>src/Controller/DefaultController.php</code></li>
-        <li>Your template at <code>templates/default/index.html.twig</code></li>
-    </ul>
+            <p><strong>L411-1 A (Article 7 de la loi du 8 ao&ucirc;t 2016 pour la reconqu&ecirc;te de la biodiversit&eacute;)</strong><br />
+                <em>&laquo; Les ma&icirc;tres d&#39;ouvrage, publics ou priv&eacute;s, doivent contribuer &agrave; cet inventaire par la saisie ou, &agrave; d&eacute;faut, par le versement des donn&eacute;es brutes de biodiversit&eacute; acquises &agrave; l&#39;occasion des &eacute;tudes d&#39;&eacute;valuation pr&eacute;alable ou de suivi des impacts r&eacute;alis&eacute;es dans le cadre de l&#39;&eacute;laboration des plans, sch&eacute;mas, programmes et autres documents de planification mentionn&eacute;s &agrave; l&#39;article L.122-4 et des projets d&#39;am&eacute;nagement soumis &agrave; l&#39;approbation de l&#39;autorit&eacute; administrative. &raquo;</em></p>
+
+            <p><strong>L 122-1-VI et R122-12</strong><br />
+                <em>&laquo; Les ma&icirc;tres d&#39;ouvrage tenus de produire une &eacute;tude d&#39;impact la mettent &agrave; disposition du public par voie &eacute;lectronique au plus tard au moment de l&#39;ouverture de l&#39;enqu&ecirc;te publique pr&eacute;vue &agrave; l&#39;article L. 123-2 ou de la participation du public par voie &eacute;lectronique pr&eacute;vue &agrave; l&rsquo;article L. 123-19 &raquo; ; &laquo; le fichier de cette &eacute;tude est accompagn&eacute; d&#39;un fichier des donn&eacute;es brutes environnementales utilis&eacute;es dans l&#39;&eacute;tude, au format ouvert et ais&eacute;ment r&eacute;utilisable, c&#39;est-&agrave;-dire lisible par une machine et exploitable par traitement standardis&eacute; de donn&eacute;es &raquo;</em></p>
+
+            <p>La mise en place du d&eacute;p&ocirc;t l&eacute;gal de donn&eacute;es brutes de biodiversit&eacute; s&rsquo;inscrit dans une d&eacute;marche partenariale regroupant diff&eacute;rents acteurs proposant plusieurs outils interconnect&eacute;s.
+                Ceux-ci assurent les t&acirc;ches indispensables du processus de d&eacute;p&ocirc;t l&eacute;gal : d&eacute;clarer une &eacute;tude, d&eacute;crire les jeux, saisir et verser les donn&eacute;es.</p>
+
+
+        </div>
+        <div class="col-sm-4">
+            <img src="images/homepage.png">
+        </div>
+    </div>
+
+    <div class="v-spacer"></div>
+
+    <div class="row blocks-container">
+        <div class="blocks">
+            <div class="well">
+                <h2 class="underlined green stick-to-top">Déclarer</h2>
+                <p class="text-center">
+                    <a href="https://www.demarches-simplifiees.fr/commencer/depot-etudes-d-impact-et-biodiversite" target="_blank">
+                        <img src="images/logo-demarches-simplifiees.png" alt="Démarches simplifiées" title="Déclarer votre étude/procédure sur demarches-simplifiees.fr">
+                    </a>
+                </p>
+            </div>
+
+            <div class="well">
+                <h2 class="underlined green stick-to-top">Décrire</h2>
+                <p class="text-center">
+                    <a href="https://inpn.mnhn.fr/mtd" target="_blank">
+                        <img src="images/logo-inpn-mtd.png" alt="INPN - Métadonnées" title="Décrire les métadonnées de vos jeux de données">
+                    </a>
+                </p>
+            </div>
+
+            <div class="well">
+                <h2 class="underlined green stick-to-top">Saisir</h2>
+                <p class="text-center">
+                    <a href="/saisie" target="_blank">
+                        <img src="images/logo-geonature.png" alt="GéoNature" title="Saisir vos données (optionnel)">
+                    </a>
+                </p>
+            </div>
+
+            <div class="well">
+                <h2 class="underlined green stick-to-top">Verser</h2>
+                <p class="text-center">
+                    <a href="/versement" target="_blank">
+                        <img src="images/ginco.png" alt="Ginco" title="Verser vos données dans l'INPN et obtenir votre certificat de dépôt">
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </div>
 </div>
 {% endblock %}

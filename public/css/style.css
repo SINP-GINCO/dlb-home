@@ -7043,3 +7043,9 @@ body {
 .homepage .blocks-container .blocks > div {
   display: table-cell;
 }
+.homepage .homepage-intro {
+  margin-top: 30px;
+}
+.homepage .homepage-intro img {
+  margin-top: 75px;
+}
