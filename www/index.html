@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Dépôt Légal des données brutes de Biodiversité - Accueil</title>
+        <meta name="description" content="" />
+        <link rel="icon" type="image/x-icon" href="favicon.gif" />
+
+                    <link rel="stylesheet" href="css/roboto-condensed.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            </head>
+
+    <body>
+    <div class="page">
+            <header id="page-header">
+                                <div id="banner" class="container">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <div id="header-logo">
+                                <a href="/"  title="Accueil">
+                                    <img src="images/logo-mtes-h.jpg"/>
+                                </a>
+                                <a href="/"  title="Accueil">
+                                    <img src="images/logo-sinp.png"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-7 text-right h1 header-title">
+                            Dépôt légal de Biodiversité
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+        <!-- Display warning if user browser is not supported -->
+        <div id="browser-not-supported">
+            <div>
+                <h2>Attention, vous utilisez un navigateur non recommandé</h2> <br>
+                <p>
+                    Il se peut que votre navigateur ne soit pas entièrement compatible avec ce site.
+                    Pour votre sécurité et votre confort, nous vous recommandons d'utiliser un navigateur plus récent et à jour.
+                </p>
+                <div class="link-download">
+                    <button onclick="masque_div()">Continuer avec ce navigateur</button>
+                    <a href="http://www.mozilla.org/fr/firefox/new/" target="_blank" class="dl-mozilla">Télécharger <br> Mozilla Firefox</a>
+                    <a href="http://www.google.fr/intl/fr/chrome/browser/" target="_blank" class="dl-chrome">Télécharger <br> Google Chrome</a>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var browserVersion = 0;
+            var supported = false;
+            if (/(chrome\/[0-9]{2,3})/i.test(navigator.userAgent)) {
+                browserVersion  = parseInt(navigator.userAgent.match(/(chrome\/[0-9]{2,3})/i)[0].split("/")[1]);
+                if (browserVersion > 53) {
+                    supported = true;
+                }
+            } else if (/(firefox\/[0-9]{2,3})/i.test(navigator.userAgent)) {
+                browserVersion  = parseInt(navigator.userAgent.match(/(firefox\/[0-9]{2,3})/i)[0].split("/")[1]);
+                if (browserVersion >= 45) {
+                    supported = true;
+                }
+            } else if (/(MSIE\ [0-9]{1,2})/i.test(navigator.userAgent)) {
+                browserVersion  = parseInt(navigator.userAgent.match(/(MSIE\ [0-9]{1,2})/i)[0].split(" ")[1]);
+                if (browserVersion >= 11) {
+                    supported = true;
+                }
+            } else if (/(Trident\/[7]{1,2})/i.test(navigator.userAgent)) {
+                supported = true;
+            }
+
+            if (!supported) {
+                document.getElementById('browser-not-supported').style.display = 'block';
+            }else {
+                document.getElementById('browser-not-supported').style.display = 'none';
+            }
+
+            function masque_div () {
+                var el = document.getElementById("browser-not-supported");
+                el.parentNode.removeChild(el);
+            }
+        </script>
+
+        <main id="main" class="container">
+
+            <div class="alert alert-danger" role="alert">
+                <p><strong>Attention</strong> : à ce jour, le Dépôt Légal des données brutes de Biodiversité n'est pas encore effectif.</p>
+                <p>La date prévisionnelle d'ouverture des applications permettant le dépôt légal est fixée au <strong>1er juin 2018</strong>.</p>
+            </div>
+
+            <div class="homepage">
+    <div class="row homepage-intro">
+        <div class="col-sm-8">
+            <h1 class="underlined">Dépôt Légal de Biodiversité</h1>
+
+            <p>Bienvenue sur l&rsquo;espace d&rsquo;accueil des diff&eacute;rents outils mis &agrave; la disposition des ma&icirc;tres d&rsquo;ouvrages concern&eacute;s dans le Code de l&rsquo;environnement par les articles :</p>
+
+            <p><strong>L411-1 A (Article 7 de la loi du 8 ao&ucirc;t 2016 pour la reconqu&ecirc;te de la biodiversit&eacute;)</strong><br />
+                <em>&laquo; Les ma&icirc;tres d&#39;ouvrage, publics ou priv&eacute;s, doivent contribuer &agrave; cet inventaire par la saisie ou, &agrave; d&eacute;faut, par le versement des donn&eacute;es brutes de biodiversit&eacute; acquises &agrave; l&#39;occasion des &eacute;tudes d&#39;&eacute;valuation pr&eacute;alable ou de suivi des impacts r&eacute;alis&eacute;es dans le cadre de l&#39;&eacute;laboration des plans, sch&eacute;mas, programmes et autres documents de planification mentionn&eacute;s &agrave; l&#39;article L.122-4 et des projets d&#39;am&eacute;nagement soumis &agrave; l&#39;approbation de l&#39;autorit&eacute; administrative. &raquo;</em></p>
+
+            <p><strong>L 122-1-VI et R122-12</strong><br />
+                <em>&laquo; Les ma&icirc;tres d&#39;ouvrage tenus de produire une &eacute;tude d&#39;impact la mettent &agrave; disposition du public par voie &eacute;lectronique au plus tard au moment de l&#39;ouverture de l&#39;enqu&ecirc;te publique pr&eacute;vue &agrave; l&#39;article L. 123-2 ou de la participation du public par voie &eacute;lectronique pr&eacute;vue &agrave; l&rsquo;article L. 123-19 &raquo; ; &laquo; le fichier de cette &eacute;tude est accompagn&eacute; d&#39;un fichier des donn&eacute;es brutes environnementales utilis&eacute;es dans l&#39;&eacute;tude, au format ouvert et ais&eacute;ment r&eacute;utilisable, c&#39;est-&agrave;-dire lisible par une machine et exploitable par traitement standardis&eacute; de donn&eacute;es &raquo;</em></p>
+
+            <p>La mise en place du d&eacute;p&ocirc;t l&eacute;gal de donn&eacute;es brutes de biodiversit&eacute; s&rsquo;inscrit dans une d&eacute;marche partenariale regroupant diff&eacute;rents acteurs proposant plusieurs outils interconnect&eacute;s.
+                Ceux-ci assurent les t&acirc;ches indispensables du processus de d&eacute;p&ocirc;t l&eacute;gal : d&eacute;clarer une &eacute;tude, d&eacute;crire les jeux, saisir et verser les donn&eacute;es.</p>
+
+
+        </div>
+        <div class="col-sm-4">
+            <img src="images/homepage.jpg">
+        </div>
+    </div>
+
+    <div class="v-spacer"></div>
+
+    <div class="row blocks-container">
+        <div class="blocks">
+            <div class="well well-1">
+                <h2 class="underlined green stick-to-top">Déclarer</h2>
+                <p class="text-center">
+                    <a href="https://www.demarches-simplifiees.fr/commencer/depot-etudes-d-impact-et-biodiversite" target="_blank">
+                        <img src="images/logo-demarches-simplifiees.png" alt="Démarches simplifiées" title="Déclarer votre étude/procédure sur demarches-simplifiees.fr">
+                    </a>
+                </p>
+            </div>
+
+            <div class="well well-2">
+                <h2 class="underlined green stick-to-top">Décrire</h2>
+                <p class="text-center">
+                    <a href="https://inpn.mnhn.fr/mtd" target="_blank">
+                        <img src="images/logo-inpn-mtd.png" alt="INPN - Métadonnées" title="Décrire les métadonnées de vos jeux de données">
+                    </a>
+                </p>
+            </div>
+
+            <div class="well well-3">
+                <h2 class="underlined green stick-to-top">Saisir</h2>
+                <p class="text-center">
+                    <a href="/saisie" target="_blank">
+                        <img src="images/logo-geonature.png" alt="GéoNature" title="Saisir vos données (optionnel)">
+                    </a>
+                </p>
+            </div>
+
+            <div class="well well-4">
+                <h2 class="underlined green stick-to-top">Verser</h2>
+                <p class="text-center">
+                    <a href="/versement" target="_blank">
+                        <img src="images/ginco.png" alt="Ginco" title="Verser vos données dans l'INPN et obtenir votre certificat de dépôt">
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+        </main>
+
+                <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <p><strong>En savoir plus</strong></p>
+                        <ul class="nav">
+                            <li><a href="http://www.naturefrance.fr/reglementation/depot-legal-de-donnees-brutes-de-biodiversite" target="_blank">
+                                    <img src="images/logo-naturefrance.png" alt="Site Naturefrance" class="logo naturefrance"/>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-2">
+                        <p><strong>Aide</strong></p>
+                        <ul class="nav">
+                            <li><a href="https://ginco.naturefrance.fr/doc-dlb-dailybuild/">Aide en ligne</a></li>
+                            <li><a href="/versement/contact">Contact</a></li>
+                            <li><a href="/mentions-legales">Mentions légales</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-8 text-right">
+                        <img src="images/partenaire-ecrins.jpg" alt="Parc National des Ecrins" class="logo ecrins"/>
+                        <img src="images/logo-ign.jpg" alt="IGN - Institut National de l'Information Géographique et forestière" class="logo ign"/>
+                        <img src="images/logo-mnhn.jpg" alt="MNHN - Museum National d'Histoire Naturelle"  class="logo mnhn"/>
+                        <img src="images/logo-afb.png" alt="AFB - Agence Française pour la Biodiversité"  class="logo afb"/>
+                        <img src="images/logo-mtes.jpg" alt="MTES - Ministère de la Transition, écologique et solidaire"  class="logo mtes"/>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+        
+    </body>
+</html>
