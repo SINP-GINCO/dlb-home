@@ -14,14 +14,23 @@
     "doctrine/collections": {
         "version": "v1.4.0"
     },
-    "doctrine/common": {
-        "version": "v2.7.3"
+    "doctrine/event-manager": {
+        "version": "1.1.0"
     },
     "doctrine/inflector": {
         "version": "v1.2.0"
     },
     "doctrine/lexer": {
         "version": "v1.0.1"
+    },
+    "doctrine/persistence": {
+        "version": "1.2.0"
+    },
+    "doctrine/reflection": {
+        "version": "v1.0.0"
+    },
+    "nikic/php-parser": {
+        "version": "v4.3.0"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -118,6 +127,9 @@
     },
     "symfony/polyfill-apcu": {
         "version": "v1.7.0"
+    },
+    "symfony/polyfill-ctype": {
+        "version": "v1.13.1"
     },
     "symfony/polyfill-mbstring": {
         "version": "v1.7.0"
